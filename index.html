@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pentru tine 🤍</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id="login">
+
+<div class="loginBox">
+
+<h1>Pentru tine 🤍</h1>
+
+<p>
+Introdu data din care
+povestea noastră
+a prins culoare.
+</p>
+
+<input
+id="password"
+type="password"
+placeholder="12.11.2023">
+
+<button id="loginBtn">
+Deschide
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<section id="envelopePage" class="hidden">
+
+<div class="center">
+
+<div class="envelope" id="envelope">
+
+<img src="assets/envelope.png" alt="Plic">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="letterPage" class="hidden">
+
+<div class="letter">
+
+<h2 id="letterTitle"></h2>
+
+<div id="letterContent"></div>
+
+<button id="nextButton">
+
+Deschide urmatorul plic →
+
+</button>
+
+</div>
+
+</section>
+
+<section id="galleryPage" class="hidden">
+
+<div class="letter">
+
+<h2>
+
+Te iubesc soarele meu,
+de la cer pan' la pământ 🤍
+
+</h2>
+
+<img
+id="galleryImage"
+class="galleryPhoto"
+src="images/1.jpg"
+alt="Noi">
+
+</div>
+
+</section>
+
+<section id="finalPage" class="hidden">
+
+<div class="letter">
+
+<h1>
+
+Să ai nu doar o zi,
+ci o viață
+așa cum îți dorești! 🤍
+
+</h1>
+
+</div>
+
+</section>
+
+<audio id="music">
+<source src="audio/melodie.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const letters=[
+
+{
+
+title:"8 august 2025",
+
+text:`
+
+<p>
+
+Azi, mai mult ca-n celelalte zile,
+e despre tine,
+despre cel care va avea
+o parte din inima mea,
+indiferent unde ne va duce viața,
+despre minunea mea de bărbat,
+ce merită să fie în fiecare zi
+iubit și alintat. ♾️
+
+<br><br>
+
+Chiar dacă nu sunt lângă tine,
+ți-am pregătit ceva
+care să-ți amintească
+că în inima și gândul meu
+tu ești mereu. 🤍
+
+</p>
+
+`
+
+},
+
+{
+
+title:"La mulți ani, iubirea vieții mele! 🤍",
+
+image:"images/copilarie.png",
+
+text:`
+
+<p>
+
+Uite că a mai trecut un an
+în care sunt norocoasă
+că îți pot spune
+
+<br><br>
+
+<b>
+
+„La mulți ani,
+toată iubirea din mine!"
+
+</b>
+
+<br><br>
+
+Fiecare zi lângă mine
+mi-aș dori să ți-o petreci,
+să îți pot demonstra
+an de an
+cât de iubit ești!
+
+</p>
+
+`
+
+},
+
+{
+
+image:"images/tort.gif",
+
+text:`
+
+<h2>
+
+S-au aprins lumânările,
+
+<br><br>
+
+să înceapă urările,
+
+<br><br>
+
+că meriți totul,
+dragoste! 🤍
+
+</h2>
+
+`
+
+}
+
+];
+
+const storyImages=[
+
+"images/7.jpg",
+
+"images/8.jpg",
+
+"images/9.jpg"
+
+];
+
+const photos=[
+
+"images/1.jpg",
+
+"images/2.jpg",
+
+"images/3.jpg",
+
+"images/4.jpg",
+
+"images/5.jpg",
+
+"images/6.jpg"
+
+];
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
